@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.technovit.RoomGame">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/room1"
+        android:onClick="wrong"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Can you Find the"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        android:id="@+id/textView"
+        android:layout_above="@+id/key"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000080"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button_room1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:background="@drawable/rounded_textview"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:onClick="display1"/>
+
+        <Button
+            android:id="@+id/button_room2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_textview"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:onClick="display2"/>
+
+        <Button
+            android:id="@+id/button_room3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_textview"
+            android:padding="16dp"
+            android:text="3"
+            android:onClick="display3"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textAlignment="center"
+        android:text="Key ?"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAllCaps="true"
+        android:id="@+id/key"
+        android:layout_alignTop="@+id/back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="correct"/>
+
+
+</RelativeLayout>

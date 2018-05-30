@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.technovit.question3">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/open"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="He goes to the first floor and moves into the room facing the direction of the body. He opens the window in that direction and looks down towards his team. The he goes to the second floor and again moves into the room facing that direction, opens the window and looks down at his team."
+        android:layout_alignParentBottom="true"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp"
+        android:text="Next"
+        android:onClick="next"/>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/next"
+        android:layout_alignStart="@+id/next"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="17dp"
+        android:text="Prev"
+        android:onClick="prev"/>
+
+</RelativeLayout>
